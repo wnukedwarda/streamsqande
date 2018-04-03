@@ -1,5 +1,6 @@
 package pl.dominisz;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +22,11 @@ public class ExerciseOne {
     }
 
     private static List<Person> createRoster() {
-
-        return null;
+        List<Person> roster = new ArrayList<>();
+        roster.add(new Person(Person.Sex.MALE, "Adam"));
+        roster.add(new Person(Person.Sex.FEMALE, "Beata"));
+        roster.add(new Person(Person.Sex.MALE, "Cezary"));
+        roster.add(new Person(Person.Sex.FEMALE, "Danuta"));
+        return roster;
     }
 }
