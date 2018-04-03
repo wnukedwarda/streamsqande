@@ -1,6 +1,9 @@
 package pl.dominisz;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Exercise from
@@ -12,12 +15,13 @@ import java.util.ArrayList;
  */
 public class ExerciseTwo {
 
-/*    public static void main(String[] args) {
+    public static void main(String[] args) {
+        List<Album> albums = new ArrayList<>();
         List<Album> favs = new ArrayList<>();
         for (Album a : albums) {
             boolean hasFavorite = false;
-            for (Track t : a.tracks) {
-                if (t.rating >= 4) {
+            for (Track t : a.getTracks()) {
+                if (t.getRating() >= 4) {
                     hasFavorite = true;
                     break;
                 }
@@ -27,8 +31,8 @@ public class ExerciseTwo {
         }
         Collections.sort(favs, new Comparator<Album>() {
             public int compare(Album a1, Album a2) {
-                return a1.name.compareTo(a2.name);
+                return a1.getName().compareTo(a2.getName());
             }
         });
-    }*/
+    }
 }
