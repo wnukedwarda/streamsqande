@@ -18,6 +18,7 @@ public class ExerciseTwo {
     public static void main(String[] args) {
         List<Album> albums = new ArrayList<>();
         List<Album> favs = new ArrayList<>();
+
         for (Album a : albums) {
             boolean hasFavorite = false;
             for (Track t : a.getTracks()) {
@@ -29,6 +30,7 @@ public class ExerciseTwo {
             if (hasFavorite)
                 favs.add(a);
         }
+
         Collections.sort(favs, new Comparator<Album>() {
             public int compare(Album a1, Album a2) {
                 return a1.getName().compareTo(a2.getName());

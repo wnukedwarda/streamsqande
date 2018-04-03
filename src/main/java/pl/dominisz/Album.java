@@ -18,4 +18,9 @@ public class Album {
     public List<Track> getTracks() {
         return tracks;
     }
+
+    public boolean hasFavorite() {
+        return tracks.stream()
+                .anyMatch(track -> track.getRating() >= 4);
+    }
 }
