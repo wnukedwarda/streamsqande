@@ -1,5 +1,8 @@
 package pl.dominisz;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  * Exercise from
  * https://docs.oracle.com/javase/tutorial/collections/streams/QandE/questions.html

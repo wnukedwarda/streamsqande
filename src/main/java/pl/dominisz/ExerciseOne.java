@@ -1,5 +1,7 @@
 package pl.dominisz;
 
+import java.util.List;
+
 /**
  * Exercise from
  * https://docs.oracle.com/javase/tutorial/collections/streams/QandE/questions.html
@@ -10,11 +12,16 @@ package pl.dominisz;
 public class ExerciseOne {
 
     public static void main(String[] args) {
-
+        List<Person> roster = createRoster();
         for (Person p : roster) {
             if (p.getGender() == Person.Sex.MALE) {
                 System.out.println(p.getName());
             }
         }
+    }
+
+    private static List<Person> createRoster() {
+
+        return null;
     }
 }
