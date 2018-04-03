@@ -1,7 +1,6 @@
 package pl.dominisz;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Exercise from
@@ -13,7 +12,7 @@ import java.util.Collections;
  */
 public class ExerciseTwo {
 
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         List<Album> favs = new ArrayList<>();
         for (Album a : albums) {
             boolean hasFavorite = false;
@@ -31,5 +30,5 @@ public class ExerciseTwo {
                 return a1.name.compareTo(a2.name);
             }
         });
-    }
+    }*/
 }
