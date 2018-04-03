@@ -2,6 +2,7 @@ package pl.dominisz;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Exercise from
@@ -14,16 +15,24 @@ public class ExerciseOne {
 
     public static void main(String[] args) {
         List<Person> roster = createRoster();
-        //Java 7
+        //wywołania poniższych metod
+    }
+
+    public static List<String> createMaleNameList7(List<Person> roster) {
+        List<String> maleNames = new ArrayList<>();
         for (Person p : roster) {
             if (p.getGender() == Person.Sex.MALE) {
-                System.out.println(p.getName());
+                maleNames.add(p.getName());
             }
         }
-        //Java 8
-        roster.stream()
+        return maleNames;
+    }
+
+    public static List<String> createMaleNameList8(List<Person> roster) {
+        return roster.stream()
                 .filter(person -> person.getGender() == Person.Sex.MALE)
-                .forEach(person -> System.out.println(person.getName()));
+                .map(person -> person.getName())
+                .collect(Collectors.toList());
     }
 
     private static List<Person> createRoster() {
