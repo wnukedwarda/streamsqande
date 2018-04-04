@@ -24,6 +24,7 @@ public class ExerciseTwo {
     }
 
     private static void showAlbums(List<Album> albums) {
+        albums.forEach(album -> System.out.println(album));
     }
 
     private static List<Album> createAlbums() {
@@ -32,7 +33,7 @@ public class ExerciseTwo {
         albums.add(createAlbum("album3", 2, 3, 4, 5, 5));
         albums.add(createAlbum("album2", 2, 3, 1));
         albums.add(createAlbum("album1", 5, 5));
-        albums.add(createAlbum("album1", new Track(5), new Track(5)));
+        albums.add(createAlbum("album6", new Track(5), new Track(5)));
         return albums;
     }
 

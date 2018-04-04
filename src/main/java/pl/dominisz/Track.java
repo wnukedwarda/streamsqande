@@ -15,4 +15,11 @@ public class Track {
     public int getRating() {
         return rating;
     }
+
+    @Override
+    public String toString() {
+        return "Track{" +
+                "rating=" + rating +
+                '}';
+    }
 }

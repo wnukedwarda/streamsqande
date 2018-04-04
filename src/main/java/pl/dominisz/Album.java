@@ -28,4 +28,12 @@ public class Album {
         return tracks.stream()
                 .anyMatch(track -> track.getRating() >= 4);
     }
+
+    @Override
+    public String toString() {
+        return "Album{" +
+                "name='" + name + '\'' +
+                ", tracks=" + tracks +
+                '}';
+    }
 }
