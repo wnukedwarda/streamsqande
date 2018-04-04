@@ -1,9 +1,6 @@
 package pl.dominisz;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -48,6 +45,6 @@ public class ExerciseTwo {
     }
 
     private static Album createAlbum(String name, Track... tracks) {
-        return null;
+        return new Album(name, Arrays.asList(tracks));
     }
 }
